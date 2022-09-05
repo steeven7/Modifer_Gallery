@@ -22,10 +22,6 @@
 		--fs-400: 0.25rem;
 	}
 
-	.gallerY {
-		width: 100%;
-	}
-
 	.footer {
 		height: 14em;
 	}
@@ -38,9 +34,6 @@
 		--fs-600: 1rem;
 		--fs-500: 0.75rem;
 		--fs-400: 0.125rem;
-	}
-	.gallery {
-		width: 100%;
 	}
 
 	.footer {
@@ -133,11 +126,11 @@ h3 {
 	margin-top: 5em;
 	scroll-behavior: smooth;
 }
-
-.gallery > * {
-	flex: 0 1 25em;
+.gallery > .item {
+	inline-size: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
 }
-
 .gallery::-webkit-scrollbar {
 	width: 2em;
 	height: 1em;
@@ -165,8 +158,6 @@ h3 {
 	text-align: center;
 	scroll-snap-align: center;
 	margin-bottom: 2em;
-	max-width: 100%;
-	height: auto;
 }
 
 .caption {
