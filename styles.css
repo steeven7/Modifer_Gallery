@@ -25,9 +25,7 @@
 	.gallerY {
 		width: 100%;
 	}
-	.item {
-		width: 80vw;
-	}
+
 	.footer {
 		height: 14em;
 	}
@@ -45,9 +43,6 @@
 		width: 100%;
 	}
 
-	.item {
-		width: 80vw;
-	}
 	.footer {
 		height: 14em;
 	}
@@ -134,11 +129,13 @@ h3 {
 	display: flex;
 	gap: 1em;
 	scroll-snap-type: x mandatory;
-	flex-shrink: 0;
 	overflow-x: scroll;
 	margin-top: 5em;
 	scroll-behavior: smooth;
-	width: 25em;
+}
+
+.gallery > * {
+	flex: 0 1 25em;
 }
 
 .gallery::-webkit-scrollbar {
@@ -166,8 +163,10 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 	margin-bottom: 2em;
+	max-width: 100%;
+	height: auto;
 }
 
 .caption {
