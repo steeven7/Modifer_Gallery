@@ -1,6 +1,6 @@
 /* Custom Props */
 :root {
-	--fs-800: 4.75rem;
+	--fs-800: 4rem;
 	--fs-700: 2.75rem;
 	--fs-600: 1rem;
 	--fs-400: 0.9375rem;
@@ -15,7 +15,7 @@
 
 @media (min-width: 25em) {
 	:root {
-		--fs-800: 4rem;
+		--fs-800: 3.75rem;
 		--fs-700: 2rem;
 		--fs-600: 1rem;
 		--fs-500: 0.75rem;
@@ -29,7 +29,7 @@
 
 @media (min-width: 45em) {
 	:root {
-		--fs-800: 4.75rem;
+		--fs-800: 4rem;
 		--fs-700: 1.5rem;
 		--fs-600: 1rem;
 		--fs-500: 0.75rem;
@@ -120,6 +120,8 @@ h3 {
 
 .gallery {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	gap: 1em;
 	scroll-snap-type: x mandatory;
 	overflow-x: scroll;
@@ -177,12 +179,6 @@ footer {
 	margin: 0;
 	padding-top: 3em;
 }
-/* 
-.social_icons {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-} */
 
 .icon {
 	padding: 1em;
