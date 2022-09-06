@@ -78,7 +78,6 @@ ul {
 
 body {
 	background-color: var(--bg-color);
-	height: 100vh;
 }
 
 /* title */
@@ -121,7 +120,7 @@ h3 {
 .gallery {
 	display: flex;
 	gap: 1em;
-	scroll-snap-type: x;
+	scroll-snap-type: x mandatory;
 	overflow-x: scroll;
 	margin-top: 5em;
 	scroll-behavior: smooth;
