@@ -125,7 +125,6 @@ h3 {
 	overflow-x: scroll;
 	margin-top: 5em;
 	scroll-behavior: smooth;
-	width: 85em;
 }
 
 .gallery::-webkit-scrollbar {
