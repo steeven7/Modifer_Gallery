@@ -29,7 +29,7 @@
 
 @media (min-width: 45em) {
 	:root {
-		--fs-800: 4rem;
+		--fs-800: 3.75rem;
 		--fs-700: 1.5rem;
 		--fs-600: 1rem;
 		--fs-500: 0.75rem;
@@ -120,19 +120,14 @@ h3 {
 
 .gallery {
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	gap: 1em;
-	scroll-snap-type: x mandatory;
+	scroll-snap-type: x;
 	overflow-x: scroll;
 	margin-top: 5em;
 	scroll-behavior: smooth;
+	width: 85em;
 }
-.gallery > .item {
-	inline-size: 100%;
-	aspect-ratio: 16 / 9;
-	object-fit: cover;
-}
+
 .gallery::-webkit-scrollbar {
 	width: 2em;
 	height: 1em;
@@ -160,6 +155,7 @@ h3 {
 	text-align: center;
 	scroll-snap-align: center;
 	margin-bottom: 2em;
+	max-width: 100%;
 }
 
 .caption {
